@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: PlaypenSans-Medium;
+  src: url(../fonts/PlaypenSans-Medium.ttf);
+}
+@font-face {
+  font-family: PlaypenSans-Regular;
+  src: url(../fonts/PlaypenSans-Regular.ttf);
+}
+@font-face {
+  font-family: PlaypenSans-Light;
+  src: url(../fonts/PlaypenSans-Light.ttf);
+}
+body {
+  /* background-color: #1b1a1a; */
+  font-family: PlaypenSans-Medium;
+  background-color: #12141e;
+}
+::selection {
+  color: rgb(252, 246, 246);
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+nav {
+  background-color: #12141e;
+  padding: 15px;
+}
+.logo {
+  height: 60px;
+  cursor: pointer;
+}
+nav .btn {
+  color: #17a2b8;
+  background-color: #13131b;
+  box-shadow: #09b1cf 15px 15px 16px -6px;
+  margin-right: 40px;
+  padding: 0 40px;
+  transition: 0.5s;
+}
+nav .btn:hover {
+  box-shadow: #45598e 15px 15px 16px -6px;
+  color: #637ab7;
+}
+section {
+  background-image: url(../images/arc.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150vh;
+  position: relative;
+}
+.over-lay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+h2 {
+  color: #17a2b8;
+  font-size: 2rem;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+h2:hover {
+  color: #637ab7;
+}
+.welcome {
+  width: 50%;
+  margin: auto;
+}
+h1 {
+  color: rgb(223, 221, 221);
+  font-size: 2rem;
+  margin-top: 80px;
+}
+h1 span {
+  color: #eee;
+  font-size: 2rem;
+  box-shadow: #45598e 5px 5px 6px -2px;
+}
+h3 {
+  color: rgb(201, 198, 198);
+  /* box-shadow: #2f4170 5px 5px 6px -2px; */
+  font-size: 1rem;
+  padding-left: 20px;
+  width: 40%;
+}
+
+/* ------------- start yalla game -------------- */
+.memory-game-blocks {
+  width: 55%;
+  margin-left: 20px;
+  margin-top: 60px;
+  padding: 10px;
+}
+.game-block {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  height: 100px;
+  position: relative;
+  /* transform: rotateY(180deg); */
+}
+.memory-game-blocks .game-block.is-flipped {
+  transform: rotateY(180deg);
+}
+.game-block .front {
+  background-color: #2f4170;
+  line-height: 100px;
+  position: relative;
+}
+.game-block .front::before {
+  content: "?";
+  color: #eee;
+  font-size: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.game-block .back {
+  transform: rotateY(180deg);
+}
+.game-block .back img {
+  height: 100%;
+  object-fit: cover;
+}
+.game-block .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+/* ----------------------------- */
+@media all and (max-width: 875px) {
+  section {
+    background-image: url(../images/arc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 125vh;
+    position: relative;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .welcome {
+    width: 80%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+  h1 span {
+    color: #eee;
+    font-size: 2rem;
+  }
+  h3 {
+    color: rgb(201, 198, 198);
+    font-size: 1rem;
+  }
+  h3 {
+    color: rgb(201, 198, 198);
+    font-size: 0.5rem;
+    width: 80%;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  /* ------------- game----------- */
+  .memory-game-blocks {
+    width: 85%;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 10px;
+  }
+  .h-game {
+    margin-top: 20px;
+  }
+  .game-block {
+    height: 100px;
+  }
+}
+@media all and (max-width: 765px) {
+  /* ------------- game----------- */
+  .memory-game-blocks {
+    width: 85%;
+    margin-left: 20px;
+    margin-top: 100px;
+    padding: 10px;
+  }
+  .h-game {
+    margin-top: 30px;
+  }
+  .row > * {
+    width: 25%;
+    max-width: 100%;
+  }
+  .memoryGame {
+    margin-top: 10px;
+  }
+  .game-block {
+    width: 100%;
+    height: 90px;
+  }
+}
+@media all and (max-width: 575px) {
+  section {
+    height: 100vh;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .welcome {
+    width: 80%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+  h1 span {
+    color: #eee;
+    font-size: 2rem;
+  }
+  nav .btn {
+    margin-right: 0px;
+    padding: 0 20px;
+  }
+  h3 {
+    color: rgb(201, 198, 198);
+    font-size: 1rem;
+    width: 80%;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+  h5 {
+    font-size: 0.8rem;
+  }
+
+  /* ------------- game----------- */
+  .container {
+    width: 350px !important;
+  }
+  .memory-game-blocks {
+    margin: auto;
+  }
+  .row > * {
+    width: 25%;
+    max-width: 100%;
+  }
+  .memoryGame {
+    margin-top: 10px;
+  }
+  .game-block {
+    width: 100%;
+    height: 90px;
+  }
+}
+@media all and (max-width: 377px) {
+  section {
+    height: 90vh;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  nav .btn {
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  .welcome {
+    width: 100%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+  h1 span {
+    color: #eee;
+    font-size: 2rem;
+  }
+  h3 {
+    color: rgb(201, 198, 198);
+    font-size: 0.5rem;
+    width: 80%;
+  }
+  h4 {
+    color: rgb(201, 198, 198);
+    font-size: 0.5rem;
+  }
+  h5 {
+    font-size: 0.5rem;
+  }
+  /* ------------- game----------- */
+  .container {
+    width: 280px !important;
+  }
+  .memory-game-blocks {
+    margin: auto;
+  }
+  .row > * {
+    width: 25%;
+    max-width: 100%;
+  }
+  .memoryGame {
+    margin-top: 10px;
+  }
+  .game-block {
+    width: 100%;
+    height: 80px;
+  }
+}

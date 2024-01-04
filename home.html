@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="images/jinx___arcane_by_kouq98_dewm4d5-fullview.jpg"
+    />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <!---------------------  bootstrap  ---------------------->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--------------------  Main CSS File --------------------->
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Yalla game</title>
+  </head>
+  <body>
+    <nav class="container-fluid d-flex justify-content-between">
+      <div class="d-flex align-items-center">
+        <h2>
+          Yalla game
+          <span><i class="fa-solid fa-hands-asl-interpreting"></i></span>
+        </h2>
+      </div>
+      <button id="logAut" class="btn">log aut</button>
+    </nav>
+
+    <section>
+      <div class="over-lay">
+        <div class="container-fluid pt-3">
+          <div class="welcome">
+            <h1 class="ps-5">welcom <span id="userName"></span></h1>
+            <h3 class="text-white-50">Play Come On</h3>
+          </div>
+        </div>
+
+        <div class="game container memory-game-blocks">
+          <div class="h-game d-flex justify-content-between align-items-center">
+            <h4 class="text-white-50">don't fail</h4>
+            <h5 class="text-white-50">Wrong tries : <span>0</span></h5>
+          </div>
+          <div class="memoryGame d-flex row g-1">
+            <div class="col-sm-4 col-md-3 col-lg-3">
+              <div class="game-block" data-imge="a">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/1.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3">
+              <div class="game-block" data-imge="a">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/1.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------- -->
+            <div class="col-sm-4 col-md-3 col-lg-3">
+              <div class="game-block" data-imge="b">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/2.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="b">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/2.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <!-- ----------------------------------------- -->
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="c">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/3.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="c">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/3.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------------ -->
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="d">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/4.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="d">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/4.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <!-- ----------------------------------- -->
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="e">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/5.jpeg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="e">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/5.jpeg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------ -->
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="f">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/6.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="f">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/6.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------ -->
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="g">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/7.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="g">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/7.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------ -->
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="h">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/8.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3" data-imge="h">
+              <div class="game-block">
+                <div class="face front"></div>
+                <div class="face back">
+                  <img src="./images/img/8.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: PlaypenSans-Medium;
+  src: url(../fonts/PlaypenSans-Medium.ttf);
+}
+@font-face {
+  font-family: PlaypenSans-Regular;
+  src: url(../fonts/PlaypenSans-Regular.ttf);
+}
+body {
+  background-image: url(../images/vt.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  font-family: PlaypenSans-Medium;
+}
+.over-lay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  color: #eee;
+  box-shadow: #5583c4 15px 15px 16px -6px;
+  padding: 20px 80px;
+  width: 40%;
+  transition: 0.5s;
+}
+.btn:hover {
+  box-shadow: #5583c4 15px 15px 16px -6px;
+  color: #eee;
+}
+@media all and (max-width: 775px) {
+  .btn {
+    width: 60%;
+    font-size: 1rem;
+    padding: 20px 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 375px) {
+  .btn {
+    width: 80%;
+    font-size: 0.6rem;
+    padding: 10px 10px;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+}

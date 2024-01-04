@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: PlaypenSans-Medium;
+  src: url(../fonts/PlaypenSans-Medium.ttf);
+}
+body {
+  font-family: PlaypenSans-Medium;
+}
+::selection {
+  color: rgb(252, 246, 246);
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.btn {
+  color: #17a2b8;
+  box-shadow: #09b1cf 15px 15px 16px -6px;
+  padding: 20px 80px;
+  width: 40%;
+  transition: 0.5s;
+}
+.btn:hover {
+  box-shadow: #3cc1d8 15px 15px 16px -6px !important;
+
+  color: #3cc1d8;
+}
+section {
+  background-image: url(../images/Capture55.PNG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.over-lay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+}
+h2 {
+  color: #17a2b8;
+  font-size: 2rem;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+h1 {
+  color: rgb(223, 221, 221);
+  font-size: 2rem;
+  margin-top: 10px;
+}
+h1 span {
+  color: #eee;
+  font-size: 2rem;
+  box-shadow: #45598e 5px 5px 6px -2px;
+}
+h3 {
+  color: #0b97b3;
+  font-size: 1.4rem;
+  padding: 15px;
+}
+h3 span {
+  color: #0a92aa;
+  box-shadow: #09b1cf 5px 5px 6px -2px;
+  padding: 10px;
+}
